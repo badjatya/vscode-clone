@@ -1,0 +1,23 @@
+{
+  "name": "vscode-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badjatya/vscode-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badjatya/vscode-clone/issues"
+  },
+  "homepage": "https://github.com/badjatya/vscode-clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
