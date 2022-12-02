@@ -8,9 +8,65 @@
     <!-- Tailwind Css -->
     <link href="/dist/output.css" rel="stylesheet" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Visual Studio Code - Code Editing. Redefined</title>
   </head>
   <body>
-    <h1 class="">Vs Code Clone</h1>
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between items-center bg-grayPrimary text-white fixed top-0 left-0 right-0 pl-8 pr-4 h-12"
+    >
+      <!-- Logo container -->
+      <div class="flex items-center gap-4">
+        <div class="logo w-6">
+          <img class="w-full" src="./assets/icons/vscode.svg" alt="logo" />
+        </div>
+        <p class="text-xl">Visual Studio Code</p>
+
+        <ul class="hidden lg:flex justify-between items-center gap-6 ml-4">
+          <li><a href="#" class="text-[#9d9d9d] font-semibold">Docs</a></li>
+          <li><a href="#" class="text-[#9d9d9d] font-semibold">Updates</a></li>
+          <li><a href="#" class="text-[#9d9d9d] font-semibold">Blog</a></li>
+          <li><a href="#" class="text-[#9d9d9d] font-semibold">API</a></li>
+          <li>
+            <a href="#" class="text-[#9d9d9d] font-semibold">Extensions</a>
+          </li>
+          <li><a href="#" class="text-[#9d9d9d] font-semibold">FAQ</a></li>
+          <li><a href="#" class="text-[#9d9d9d] font-semibold">Learn</a></li>
+        </ul>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger lg:hidden">
+        <i class="fa-sharp fa-solid fa-bars text-lg"></i>
+      </div>
+
+      <!-- Search and download for bigger screen -->
+      <div class="hidden lg:flex items-center gap-4">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <button
+          class="flex items-center gap-4 bg-primary text-white px-4 py-3 font-bold"
+        >
+          <i class="fa-sharp fa-solid fa-download"></i>
+          <span>Download</span>
+        </button>
+      </div>
+    </nav>
   </body>
 </html>
