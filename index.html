@@ -29,52 +29,96 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="flex justify-between items-center bg-grayPrimary text-white fixed top-0 left-0 right-0 pl-8 pr-4 h-12"
-    >
-      <!-- Logo container -->
-      <div class="flex items-center gap-4">
-        <div class="logo w-6">
-          <img class="w-full" src="./assets/icons/vscode.svg" alt="logo" />
+    <div class="bg-grayPrimary w-full fixed top-0 left-0 right-0">
+      <nav
+        class="lg:container mx-auto flex bg-grayPrimary justify-between items-center text-white pl-8 pr-4 h-12"
+      >
+        <!-- Logo container -->
+        <div class="flex items-center gap-4 cursor-pointer">
+          <div class="logo w-6">
+            <img class="w-full" src="./assets/icons/vscode.svg" alt="logo" />
+          </div>
+          <p class="text-xl">Visual Studio Code</p>
+
+          <ul class="hidden lg:flex justify-between items-center gap-6 ml-4">
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >Updates</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >API</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >Extensions</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#9d9d9d] font-semibold transition-all hover:text-white"
+                >Learn</a
+              >
+            </li>
+          </ul>
         </div>
-        <p class="text-xl">Visual Studio Code</p>
 
-        <ul class="hidden lg:flex justify-between items-center gap-6 ml-4">
-          <li><a href="#" class="text-[#9d9d9d] font-semibold">Docs</a></li>
-          <li><a href="#" class="text-[#9d9d9d] font-semibold">Updates</a></li>
-          <li><a href="#" class="text-[#9d9d9d] font-semibold">Blog</a></li>
-          <li><a href="#" class="text-[#9d9d9d] font-semibold">API</a></li>
-          <li>
-            <a href="#" class="text-[#9d9d9d] font-semibold">Extensions</a>
-          </li>
-          <li><a href="#" class="text-[#9d9d9d] font-semibold">FAQ</a></li>
-          <li><a href="#" class="text-[#9d9d9d] font-semibold">Learn</a></li>
-        </ul>
-      </div>
+        <!-- Hamburger -->
+        <div class="hamburger lg:hidden">
+          <i class="fa-sharp fa-solid fa-bars text-lg"></i>
+        </div>
 
-      <!-- Hamburger -->
-      <div class="hamburger lg:hidden">
-        <i class="fa-sharp fa-solid fa-bars text-lg"></i>
-      </div>
-
-      <!-- Search and download for bigger screen -->
-      <div class="hidden lg:flex items-center gap-4">
-        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-        <button
-          class="flex items-center gap-4 bg-primary text-white px-4 py-3 font-bold"
-        >
-          <i class="fa-sharp fa-solid fa-download"></i>
-          <span>Download</span>
-        </button>
-      </div>
-    </nav>
+        <!-- Search and download for bigger screen -->
+        <div class="hidden lg:flex items-center gap-4">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          <button
+            class="flex items-center gap-4 bg-primary text-white px-4 py-3 font-bold"
+          >
+            <i class="fa-sharp fa-solid fa-download"></i>
+            <span>Download</span>
+          </button>
+        </div>
+      </nav>
+    </div>
 
     <!-- Version Line -->
-    <p class="bg-[#25252B] text-center mt-12 py-2 text-white">
-      <a href="#" class="text-primary transition-all hover:underline"
-        >Version 1.73</a
-      >
-      is now available! Read about the new features and fixes from October.
-    </p>
+    <div class="versionLine bg-[#25252B]">
+      <p class="lg:container mx-auto text-center mt-12 py-2 text-white">
+        <a href="#" class="text-primary transition-all hover:underline"
+          >Version 1.73</a
+        >
+        is now available! Read about the new features and fixes from October.
+      </p>
+    </div>
   </body>
 </html>
